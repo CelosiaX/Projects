@@ -1,4 +1,52 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap'); */
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.top{
+    background-color: blue;
+    width: calc(100vw - 100px);
+}
+/* use vh and vw for screen sized object */
+#cat_intro{
+    width: 80vw;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 900;
+}
+.text{
+    /* Parent font size */
+    font-size: 1em;
+    padding: 1em;
+    text-align: left;
+    text-indent: 1rem;
+}
+.more{
+    /* Root font size */
+    font-size: 1rem;
+}
 #cat{
-    width: 100px;
-    height: 100px;
+    width: 30%;
+    height: 30%;
+}
+
+.list{
+    padding: 30px;
+}
+.red_bg{
+    background-color: rgb(255,0,0);
+    color: aliceblue;
+}
+
+.blue_bg {
+    background-color: blue;
+    color: aliceblue;
+}
+
+.green_bg{
+    /* RGBA has opacity as a parameter */
+    background-color: rgba(0,255,0,0.5);
 }
