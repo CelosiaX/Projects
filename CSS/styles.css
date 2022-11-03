@@ -15,7 +15,7 @@
     width: 80vw;
     justify-content: center;
     font-size: 22px;
-    font-weight: 900;
+    font-weight: 200;
 }
 .text{
     /* Parent font size */
@@ -27,15 +27,31 @@
 .more{
     /* Root font size */
     font-size: 1rem;
+    /* Basically text styling */
+    text-decoration: overline;
 }
 #cat{
     width: 30%;
     height: 30%;
 }
 
+#no_u{
+    text-decoration: none;
+}
+#lines1{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+#lines2{
+    line-height: 0.7em;
+    word-spacing: 10px;
+}
+
 .list{
     padding: 30px;
 }
+
 .red_bg{
     background-color: rgb(255,0,0);
     color: aliceblue;
