@@ -1,18 +1,42 @@
-div{
-    min-height: 100vh;
-    min-width: 50vw;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
     color: blueviolet;
 }
-
+div{
+    min-height: 100vh;
+    font-size: 50px;
+    color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
 .big_img{
     background: url("../Images/Cat.jpg");
     background-size: cover;
     background-position: center;
-
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .sml_img{
     background: url("../Images/Sml.jpg");
     background-repeat: repeat;
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.folder_img {
+    background: url("../Images/Cat.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
