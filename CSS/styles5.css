@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{ 
+    border: 2px solid red ;
+    overflow: hidden;
+    padding: 10px;
+    margin: 10px;
+}
+
+#cat1{
+    width: 200px;
+    height: 200px;
+    float: right;
+    margin-left: 30px;
+}
+.col_3{
+    margin: 10px 10px;
+    display: flex;
+}
+
+.col_3 div{
+    height: 300px;
+    float: left;
+    width: 33.33%;
+} 
+
+#one{
+    background-color: red;
+}
+#two{
+    background-color: aqua;
+}
+#three{
+    background-color: green;
+}
+
+.pos{
+    margin-top: 30px;
+    border: 1px solid red;
+    background-color: yellow;
+    position: relative;
+}
+
+.pos p{
+    margin: 5px;
+    padding: 10px;
+}
+
+.p1{
+    background: blueviolet;
+    position: relative;
+    top: 90px;
+    left: 10rem;
+}
+
+.p2{
+    background-color:green ;
+}
+
+.special{
+    background-color: brown;
+    font-size: 2em;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.about button{
+    text-decoration: none;
+    background-color: aquamarine;
+    color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    font-size: 20px;
+}
