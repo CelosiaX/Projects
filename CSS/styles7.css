@@ -1,0 +1,65 @@
+div h1{
+    color: blue;
+}
+
+/* For direct children use > */
+div > h1{
+    color: purple;
+}
+
+/* More detailed == higher priority*/
+.header h1{
+    color: green;
+}
+
+.header > h1 {
+    color: red;
+}
+
+p::first-letter{
+    font-size: 3rem;
+}
+
+p::first-line{
+    font-weight: bold;
+}
+
+.content:hover{
+    color: red;
+    background-color: blueviolet;
+}
+
+p:hover {
+    color: blue;
+}
+
+a:hover{
+    text-decoration: none;
+    font-size: 2rem;
+}
+/* just links in general  */
+a:link{
+    color: red;
+}
+
+a:visited{
+    color: blueviolet;
+}
+
+/* when the link is held */
+a:active{
+    color: green;
+}
+
+/* For changing responsive font-size or anything thats responsive (i guess)*/
+:root{
+    font-size: 80%;
+}
+
+.abso{
+    font-size: 24px;
+}
+
+.responsive{
+    font-size: 1.5rem;
+}

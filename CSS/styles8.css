@@ -1,0 +1,48 @@
+div{
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+}
+
+.one{
+    background-color: red;
+    /* % will be based on the length of the object i.e 150px*/
+    transform: translateX(-20px) scaleX(0.5) rotate(60deg);
+}
+
+.two{
+    background-color: green;
+    transform: translateY(20%) scaleY(1.4) rotateZ(45deg);
+}
+
+.three{
+    background-color: blue;
+    /* x, y */
+    /* rotate x and y is in 3D */
+    transform: translate(20px, 50px) scale(0.5, 0.5) rotateX(30deg) skew(-20deg, 40deg);
+}
+
+div:hover{
+    background-color: cornflowerblue;
+}
+
+.four{
+    background-color: yellow;
+    /* transition-property: background, border-radius;
+    transition-duration: 4s, 2s;
+    transition-delay: 3s; */
+    /* property duration delay  */
+    /* transition: background 3s 2s, border-radius 3s 2s; */
+    transition: all 4s 2s;
+}
+.four:hover{
+    border-radius: 50%;
+}
+.five{
+    /* transition: all delay transition-type delay */
+    transition: all 2s ease-in-out 1s;
+    background-color: blueviolet;
+}
+.six{
+    background-color: brown;
+}
