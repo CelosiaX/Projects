@@ -1,0 +1,65 @@
+/* --varName:value
+ property: var(--varName) */
+
+/* Global variables */
+:root {
+    --primaryColor: #f15025;
+    --secondaryColor: #32ff0e;
+    --textColor: #1313fa;
+    --mainTransition: all 0.5s linear;
+}
+
+.heading {
+    color: var(--primaryColor);
+}
+
+.text {
+    color: #32ff0e;
+}
+
+.second-heading {
+    color: var(--secondaryColor);
+    transition: var(--mainTransition);
+}
+
+.second-heading:hover {
+    color: var(--primaryColor);
+}
+
+/* Local variables */
+div {
+    --primaryRed: red;
+}
+
+.thumb {
+    font-size: 0.5rem;
+    color: #1313fa;
+}
+.main-text {
+    color: var(--primaryRed);
+}
+
+.ast {
+    width: 50px;
+}
+
+.third-heading {
+    text-shadow: 2px 3px 1px rgba(0, 0, 0, 0.5);
+}
+
+.shadows {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    width: 200px;
+    height: 200px;
+    background-color: #1313fa;
+    transition: all 0.5s linear;
+}
+
+.shadows:hover {
+    box-shadow: 8px 10px 3px rgba(0, 0, 0, 0.5);
+}

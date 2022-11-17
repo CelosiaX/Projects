@@ -1,48 +1,144 @@
-div{
-    width: 150px;
-    height: 150px;
-    display: inline-block;
+div {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+}
+.transform {
+  width: auto;
+  height: auto;
+  display: block;
 }
 
-.one{
-    background-color: red;
-    /* % will be based on the length of the object i.e 150px*/
-    transform: translateX(-20px) scaleX(0.5) rotate(60deg);
+.one {
+  background-color: red;
+  /* % will be based on the length of the object i.e 150px*/
+  transform: translateX(-20px) scaleX(0.5) rotate(60deg);
 }
 
-.two{
-    background-color: green;
-    transform: translateY(20%) scaleY(1.4) rotateZ(45deg);
+.two {
+  background-color: green;
+  transform: translateY(20%) scaleY(1.4) rotateZ(45deg);
 }
 
-.three{
-    background-color: blue;
-    /* x, y */
-    /* rotate x and y is in 3D */
-    transform: translate(20px, 50px) scale(0.5, 0.5) rotateX(30deg) skew(-20deg, 40deg);
+.three {
+  background-color: blue;
+  /* x, y */
+  /* rotate x and y is in 3D */
+  transform: translate(20px, 50px) scale(0.5, 0.5) rotateX(30deg)
+    skew(-20deg, 40deg);
 }
 
-div:hover{
-    background-color: cornflowerblue;
+.transform div:hover {
+  background-color: cornflowerblue;
 }
 
-.four{
-    background-color: yellow;
-    /* transition-property: background, border-radius;
+.four {
+  background-color: yellow;
+  /* transition-property: background, border-radius;
     transition-duration: 4s, 2s;
     transition-delay: 3s; */
-    /* property duration delay  */
-    /* transition: background 3s 2s, border-radius 3s 2s; */
-    transition: all 4s 2s;
+  /* transition: property duration delay  */
+  /* transition: background 3s 2s, border-radius 3s 2s; */
+  transition: all 3s 1s;
 }
-.four:hover{
-    border-radius: 50%;
+.four:hover {
+  border-radius: 50%;
 }
-.five{
-    /* transition: all delay transition-type delay */
-    transition: all 2s ease-in-out 1s;
-    background-color: blueviolet;
+.five {
+  /* transition: all duration transition-type delay */
+  transition: all 2s ease-in-out 1s;
+  background-color: blueviolet;
 }
-.six{
-    background-color: brown;
+.six {
+  background-color: brown;
+}
+
+.transitions {
+  /* //To display the blocks inline */
+  /* width: auto;
+  height: auto; */
+
+  display: inline-block;
+}
+.transitions div {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  background-color: blueviolet;
+  color: white;
+  transition: all 2s;
+}
+
+.transitions div:hover {
+  background-color: none;
+  transform: translateX(200px);
+}
+
+.t2 {
+  transition-timing-function: ease;
+}
+.t3 {
+  transition-timing-function: linear;
+}
+.t4 {
+  transition-timing-function: ease-in;
+}
+.t5 {
+  transition-timing-function: ease-out;
+}
+.t6 {
+  transition-timing-function: ease-in-out;
+}
+
+.animations {
+  /* width: auto;
+  height: auto; */
+}
+
+.animations div {
+  margin: 10px;
+  background-color: coral;
+}
+
+.a1 {
+  transition: all 2s linear;
+}
+
+.a1:hover {
+  background-color: yellow;
+  transform: translateX(300px);
+}
+
+.a2 {
+  /* animation-name: move;
+  animation-duration: 10s;
+  animation-iteration-count: infinite; */
+  /* // Name duration iteration count */
+  animation: move 5s 2;
+  /* To decide what value the animation will end in */
+  animation-fill-mode: forwards;
+}
+
+@keyframes move {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+    transform: translateX(100px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(-100px);
+    background-color: red;
+  }
+  /* 75% {
+    transform: translateX(20px);
+    background-color: yellow;
+  } */
+  100% {
+    opacity: 0.5;
+    transform: translateX(0px);
+    background-color: greenyellow;
+  }
 }
